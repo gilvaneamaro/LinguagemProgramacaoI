@@ -21,10 +21,10 @@ public class Main {
 		sc.nextLine();
 		
 		if(valorA > valorB) {
-			System.out.println("O valor " + valorA + " é mais do que " + valorB);
+			System.out.println("O maior valor inserido foi" + valorA);
 		}
 		else {
-			System.out.println("O valor " + valorB + " é maior do que " + valorA);
+			System.out.println("O maior valor inserido foi" + valorB);
 		}
 		
 		sc.close();
