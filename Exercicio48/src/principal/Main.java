@@ -13,14 +13,21 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		
 		Scanner sc = new Scanner(System.in);
+		double p1 = -1;
+		double p2 = p1;
 		
-		System.out.println("Insira a nota da p1:");
-		double p1 = sc.nextDouble();
-		sc.nextLine();
+		while (p1 < 0 || p1 > 10){
 		
-		System.out.println("Insira a nota da p2:");
-		double p2 = sc.nextDouble();
-		sc.nextLine();
+			System.out.println("Insira a nota da p1:");
+			p1 = sc.nextDouble();
+			sc.nextLine();
+		}
+		
+		while (p2 < 0 || p2 > 10) {
+			System.out.println("Insira a nota da p2:");
+			p2 = sc.nextDouble();
+			sc.nextLine();
+		}
 		
 		double media = (p1 + p2) / 2;
 		
