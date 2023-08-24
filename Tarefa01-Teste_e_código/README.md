@@ -1,7 +1,4 @@
-# Linguagem Programacao I
-Conteúdo das aulas da disciplina de Linguagem de Programação I.
-
-## Teste de Mesa -
+# Teste de Mesa dos exercicios
 
 * Exercicio 06 - Cálculo da Área do Retângulo
 
