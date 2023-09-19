@@ -1,10 +1,10 @@
-// 80) Ler um vetor Q de 20 posições (aceitar somente números positivos). 
-// Escrever a seguir o valor do maior elemento de Q e a respectiva posição que ele ocupa no vetor. 
+//81) O  mesmo  exercício  anterior,  mas  agora  deve  escrever  o menor  elemento  do  vetor  
+// e  a  respectiva posição dele nesse vetor
 package Exercicios;
 
 import java.util.Scanner;
 
-public class Exercicio_80 {
+public class Exercicio_81 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -20,20 +20,19 @@ public class Exercicio_80 {
 			}while(entrada < 0);
 		}
 		Integer pos = -1;
-		Double maior = 0.0;
+		Double menor = 0.0;
 		for(int i=0; i<q.length; i++) {
 			if(i == 0) {
-				maior = q[i];
+				menor = q[i];
 				pos = i;
 			}
-			else if(q[i] > maior) {
-				maior = q[i];
+			else if(q[i] < menor) {
+				menor = q[i];
 				pos = i;
 			}
 		}
-		System.out.printf("o maior numero digitado foi %.2f na posição %d.", maior, pos);
+		System.out.printf("o menor numero digitado foi %.2f na posição %d.", menor, pos);
 		sc.close();
 
 	}
-
 }
